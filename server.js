@@ -296,7 +296,7 @@ const updateRole = async () => {
         name: person.first_name + " " + person.last_name,
         value: person.id
     }));
-    // console.log("You can update employee roles: ");
+    // console.log("Update employee roles");
     let updateEmployee = await inquirer.prompt([
         {
             name: "employeeName",

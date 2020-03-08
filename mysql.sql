@@ -28,7 +28,6 @@ name VARCHAR(30) NOT NULL,
 PRIMARY KEY (id)
 );
 
--- Manager 
 CREATE VIEW allemployees AS 
 (SELECT a.id, a.first_name, a.last_name, b.title, b.salary, c.name, NULL 'Manager' 
 FROM employee a
