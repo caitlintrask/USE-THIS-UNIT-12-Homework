@@ -24,15 +24,15 @@ VALUES ("sales specialist", 60000.00, (SELECT id FROM department WHERE name='Sal
 
 
 INSERT INTO employee (first_name, last_name, role_id, department_id)
-VALUES("Jessica", "Porter", (SELECT id FROM role WHERE title="junior developer"), (SELECT department_id FROM role WHERE title="junior developer"));
+VALUES("Caitlin", "Trask", (SELECT id FROM role WHERE title="junior developer"), (SELECT department_id FROM role WHERE title="junior developer"));
 
 INSERT INTO employee (first_name, last_name, role_id, department_id)
-VALUES("Molly", "Green", (SELECT id FROM role WHERE title="marketing specialist"), (SELECT department_id FROM role WHERE title="marketing specialist"));
+VALUES("Hayley", "Budzinski", (SELECT id FROM role WHERE title="marketing specialist"), (SELECT department_id FROM role WHERE title="marketing specialist"));
 
 INSERT INTO employee (first_name, last_name, role_id, department_id)
-VALUES("Sarah", "Bartlet", (SELECT id FROM role WHERE title="sales manager"), (SELECT department_id FROM role WHERE title="sales manager"));
+VALUES("John", "Smith", (SELECT id FROM role WHERE title="sales manager"), (SELECT department_id FROM role WHERE title="sales manager"));
 
 INSERT INTO employee (first_name, last_name, role_id, department_id)
-VALUES("John", "Sampson", (SELECT id FROM role WHERE title="marketing manager"), (SELECT department_id FROM role WHERE title="marketing manager"));
+VALUES("Jane", "DOe", (SELECT id FROM role WHERE title="marketing manager"), (SELECT department_id FROM role WHERE title="marketing manager"));
 
-UPDATE employee SET manager_id=(SELECT * FROM(SELECT id FROM employee WHERE first_name="John" AND last_name="Sampson")tblTmp) WHERE id=2;
+UPDATE employee SET manager_id=(SELECT * FROM(SELECT id FROM employee WHERE first_name="Hayley" AND last_name="Budzinski")tblTmp) WHERE id=2;
