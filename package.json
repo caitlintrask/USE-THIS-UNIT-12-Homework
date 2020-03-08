@@ -1,0 +1,26 @@
+{
+  "name": "use-this-unit-12-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.0.6",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitlintrask/USE-THIS-UNIT-12-Homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitlintrask/USE-THIS-UNIT-12-Homework/issues"
+  },
+  "homepage": "https://github.com/caitlintrask/USE-THIS-UNIT-12-Homework#readme"
+}

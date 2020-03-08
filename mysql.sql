@@ -28,8 +28,7 @@ name VARCHAR(30) NOT NULL,
 PRIMARY KEY (id)
 );
 
--- Full VIEW FOR Manager
---Realizing now that this could have just been a LEFT JOIN -- Woops! 
+-- Manager 
 CREATE VIEW allemployees AS 
 (SELECT a.id, a.first_name, a.last_name, b.title, b.salary, c.name, NULL 'Manager' 
 FROM employee a
